@@ -12,42 +12,42 @@ using namespace std;
 
 int main()
 {
-	string feeling, feelingreason, moodreason,subject, aspect;
-	cout << "Hello! I am Li Gu. How are you today? Do you feel good, fair or bad? " << endl;
+	string feeling, feelingreason, moodreason, subject, aspect;
+	cout << "Hello! I am Li Gu. How are you today? Are you feeling good, fair or bad? " << endl;
 	cin >> feeling;
 	if (feeling == "good")
 	{
-		cout << "I'm glad you are feeling good!\n";
+		cout << "I'm glad that you are feeling good!" << endl;
 	}
 	else
 	{
-		cout << "Why do you feel so " <<  feeling <<" ? Because of bad weather or mood?\n";
-		cin >> feelingreason ;
+		cout << "Why are you feeling so " <<  feeling <<" ? Because of bad weather or mood?\n";
+		cin >> feelingreason;
 		if (feelingreason == "weather")
 		{
-			cout << "I hope " << feelingreason << " will be better tomorrow." << endl;
+			cout << "I hope the weather will be better tomorrow." << endl;
 		}
 		else if (feelingreason == "mood")
 		{
-			cout << "Why is your " << feelingreason <<" not so sweet? For your job, study or life?" << endl;
-			cin >> moodreason ;
+			cout << "Why is your mood not so sweet? For your job, study or life?" << endl;
+			cin >> moodreason;
 			if (moodreason == "study")
 			{
-				cout << "Among Mathematics, English and Biographies, which one is the hardest to " << moodreason << " ?" << endl;
+				cout << "Among Mathematics, English and Biographies, which one is the hardest for you?" << endl;
 				cin >> subject;
-			    if (subject == ("Mathematics") || ("Biography"))
+			    if (subject == "Mathematics" || subject == "Biography")
 			    {
 			    	cout << "Yes, " << subject <<" is difficult." << endl;
 			    }
-			    else
+			    else if (subject == "English")
 			    {
-			    	cout << "Which aspect bores you in "<< subject << "? Grammar, Vocabulary or Writing?\n";
+			    	cout << "Which aspect bores you for English study, Grammar, Vocabulary or Writing?" << endl;
 			        cin >> aspect;
 			    	if (aspect == "Grammar")
 			    	{
 			    		char hard ;
 			    		cout << "Please answer the following questions with either Y for Yes or N for No." << endl;
-			    		cout << "Tense in " << aspect << " is very hard, isn't it?" << endl;
+			    		cout << "Tense in grammar is very hard, isn't it?" << endl;
 			    		cin >> hard;
 			    		if (hard == 'Y')
 			    		{
@@ -60,11 +60,11 @@ int main()
 			    	}
 			    	else if (aspect == "Vocabulary")
 					{
-			    		cout << aspect << " is the basic of a language." << endl;
+			    		cout << "Vocabulary is the basic of a language." << endl;
 					}
 			    	else
 			    	{
-			    		cout << "Exercises will help you in " << aspect << " ." << endl;
+			    		cout << "Exercises will help you in " << aspect << "." << endl;
 			    	}
 			    }
 			}
